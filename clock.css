@@ -1,0 +1,50 @@
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.main-clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #000;
+    border-radius: 50%;
+}
+
+.clock-arrow span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform: rotate(-90deg)*/;
+    transform-origin: left center;
+    border-bottom-width: 5px;
+    border-style: solid;
+}
+
+.arrow-hour {
+    width: 60px;
+    border-color: red;
+}
+
+.arrow-min {
+    width: 90px;
+    border-color: blue;
+}
+
+.arrow-sec {
+    width: 120px;
+    border-color: green;
+}
+
+.arrow-center {
+    position: absolute;
+    top: 48%;
+    left: 47%;
+    border: 7px solid #000;
+    border-radius: 50%;
+}
